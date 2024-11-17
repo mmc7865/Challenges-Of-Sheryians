@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Registration-form">
+            <h2>Registration Form</h2>
+         <form class="form">
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="text" placeholder="Confirm Password">
+            <div class="child-form">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <input type="text" placeholder="Phone">
+            <input type="text" placeholder="Address">
+            <div class="radio">
+                <label for="">Gender :</label>
+                <input type="radio" id="male" name="gender"></input>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender"></input>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender"></input>
+                <label for="other">Other</label>
+            </div>
+            <select name="country" id="country">
+                <option value="">Country</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">UK</option>
+                <option value="">UAE</option>
+            </select>
+            <div class="checkbox">
+                <div class="check">
+                    <input type="checkbox" id="t&c"></input>
+                    <label for="t&c">I agree with terms and conditions </label><br>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="subs"></input>
+                    <label for="subs">I want to receive the newslatter </label>
+                </div>
+            </div>
+            <button>Register</button>
+         </form>
+        </div>
+    </div>
+    
+</body>
+</html>

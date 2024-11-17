@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --primary-color: #5952a5;
+  --secondary-color: #e3eafa;
+  --first-Box: #ebebfd;
+  --second-Box: #f5eafc;
+  --third-Box: #faebf1;
+  --gray-Shade: #efefef;
+  --default-Color: #ffffff;
+}
+nav {
+  width: 20%;
+  height: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 5%;
+  position: relative;
+}
+nav > img{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+nav::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  box-shadow: 4px 4px var(--secondary-color);
+  border-bottom-right-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: 119px;
+  z-index: 100;
+}
+nav::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  box-shadow: 4px -4px var(--secondary-color);
+  border-top-right-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: 183px;
+  z-index: 100;
+}
+nav > h4 {
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--default-Color);
+}
+nav > ul {
+  z-index: 2;
+}
+nav > ul > li {
+  list-style: none;
+  color: var(--default-Color);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding-bottom: 20%;
+  z-index: 2;
+  cursor: pointer;
+}
+nav > ul > li:nth-child(1) {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.content {
+  width: 80%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  padding: 0% 3% 3% 3%;
+  position: relative;
+}
+.content::before {
+  content: "";
+  width: 25%;
+  height: 7%;
+  position: absolute;
+  left: -22%;
+  top: 22%;
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  z-index: 1;
+}
+.content > .search {
+  width: 100%;
+  height: 10%;
+  background-color: var(--default-Color);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+}
+.content > .search > h4 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  font: 700 2vw arial;
+}
+#search {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--gray-Shade);
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 25%;
+  border-radius: 50px;
+}
+::placeholder {
+  color: rgb(178, 173, 173);
+}
+.ri-search-line {
+  position: absolute;
+  right: 12%;
+  top: 20%;
+  color: var(--default-Color);
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 50px;
+  z-index: 99;
+  cursor: pointer;
+}
+.ri-logout-box-r-line {
+  position: absolute;
+  right: 3%;
+  top: 27%;
+  font-size: 30px;
+  color: #b2adad;
+  cursor: pointer;
+}
+.middle-section {
+  margin-top: 3%;
+  width: 100%;
+  height: 37%;
+  /* border: 2px solid ; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.bio {
+  width: 67%;
+  height: 100%;
+  background-color: var(--default-Color);
+  /* margin: 3%; */
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  position: relative;
+}
+.bio > .profile > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.bio > .about > h4 {
+  font: 700 2vw arial;
+  line-height: 50px;
+}
+.bio > .about > h5 {
+  font: 700 1.2vw arial;
+  color: #b2adad;
+  line-height: 25px;
+}
+.bio > .about > h5 > span {
+  color: black;
+}
+.social {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 30px;
+  font-size: 25px;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.social1:hover {
+  color: #3b5998;
+}
+.social2:hover {
+  color: #0a66c2;
+}
+.social3:hover {
+  color: #000000;
+}
+.social4:hover {
+  color: #f46f30;
+}
+.social5:hover {
+  color: #000000;
+}
+.bio > .edit {
+  font-size: 30px;
+  color: #b2adad;
+}
+.bio > .edit > i {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
+}
+.info {
+  width: 30%;
+  height: 100%;
+  background-color: var(--default-Color);
+  border-radius: 30px;
+  padding: 2%;
+  padding-left: 4%;
+  font: 500 15px arial;
+  color: var(--primary-color);
+  position: relative;
+}
+.share{
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  transform: rotate(140deg);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.bottom-section {
+  width: 100%;
+  height: 48%;
+  /* border: 1px solid ; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.bottom-section > .left {
+  width: 30%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  padding: 2%;
+  color: var(--default-Color);
+}
+.bottom-section ul, .info ul{
+  margin-top: 5%;
+  padding: 5%;
+  font: 500 15px arial;
+}
+.bottom-section ul > li ,.info ul > li{
+  line-height: 30px;
+}
+.bottom-section > .right {
+  width: 67%;
+  height: 100%;
+  background-color: var(--default-Color);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  gap: 3%;
+  padding: 2%;
+  overflow: hidden;
+}
+.bottom-section span, .info > span {
+  font: 600 25px Arial;
+}
+.bottom-section > .right > .box1 {
+  width: 100%;
+  height: 25%;
+  background-color: var(--first-Box);
+  border-radius: 10px;
+  padding: 10px;
+}
+.bottom-section h3 {
+  font: 700 15px arial;
+  line-height: 20px;
+}
+.bottom-section h5 {
+  font: 700 12px arial;
+  color: #b2adad;
+}
+.bottom-section > .right > .box2 {
+  width: 100%;
+  height: 25%;
+  background-color: var(--second-Box);
+  border-radius: 10px;
+  padding: 10px;
+}
+.bottom-section > .right > .box3 {
+  width: 100%;
+  height: 25%;
+  background-color: var(--third-Box);
+  border-radius: 10px;
+  padding: 10px;
+}

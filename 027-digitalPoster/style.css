@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "SUSE";
+}
+.container {
+    width: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+
+}
+.container .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .logo h2{
+    font-size: 35px;
+    line-height: 25px;
+    color: rgb(247, 213, 47);
+}
+.container .logo h3 {
+    color: orangered;
+}
+.container .logo h3 span{
+    color: #07078a;
+}
+.container > span{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    background-color: #07078a;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.container > h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px orangered;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    gap: 5px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c1126;
+    color: #fff;
+    padding: 5px 10px;
+}
+.box p{
+    font-size: 14px;
+}
+h3 span{
+    color: #07078a;
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="ri-apple-fill"></i>
+        </div>
+        <ul>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">Airpods</a></li>
+          <li><a href="#">TV & Home</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <div class="search-bag">
+          <i class="ri-search-line"></i>
+          <i class="ri-shopping-bag-line"></i>
+        </div>
+      </nav>
+      <header>
+        <h2>iPhone 16</h2>
+        <img src="hero.jpg" />
+      </header>
+      <div class="content">
+        <div class="timer" id="timer">00:00:00</div>
+        <button>Buy Now</button>
+        <h3>From ₹119900.00*</h3>
+        <span>Apple Intelligence available now in US English</span>
+      </div>
+    </div>
+
+    <script>
+      function startTimer(duration, display) {
+        var timer = duration,
+          hours,
+          minutes,
+          seconds;
+        setInterval(function () {
+          hours = parseInt(timer / 3600, 10);
+          minutes = parseInt((timer % 3600) / 60, 10);
+          seconds = parseInt(timer % 60, 10);
+
+          hours = hours < 10 ? "0" + hours : hours;
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          display.textContent = hours + ":" + minutes + ":" + seconds;
+
+          if (--timer < 0) {
+            timer = 0;
+          }
+        }, 1000);
+      }
+      window.onload = function () {
+        var countdownTime = 60 * 60, // 1 hour in seconds
+          display = document.getElementById("timer");
+        startTimer(countdownTime, display);
+      };
+    </script>
+  </body>
+</html>

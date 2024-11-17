@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+:root {
+  --primary-color: #323463;
+  --secondary-color: #8e93da;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  right: -40px;
+  bottom: -70px;
+  border-radius: 20px;
+  transform: rotate(-30deg);
+}
+.container::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: -40px;
+  top: -70px;
+  border-radius: 20px;
+  transform: rotate(-30deg);
+}
+.container > .center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+  width: 50%;
+  border-radius: 20px;
+  /* overflow: hidden; */
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: #fff;
+  font-family: "Handjet", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: var(--primary-color);
+  position: relative;
+}
+.left::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  background-color: var(--primary-color);
+  transform: scale(8);
+}
+.left > img {
+  height: 150px;
+}
+.left > h1 {
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.left > p {
+  font-weight: 600;
+}
+button {
+  padding: 10px 40px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin-top: 5%;
+  font: 700 16px "Handjet";
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+.left > button:hover {
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--secondary-color);
+  position: relative;
+}
+.right::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  background-color: var(--primary-color);
+  transform: scale(8);
+  animation: anime 0.5s;
+}
+@keyframes anime {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.right > h2 {
+  font: 700 40px "Handjet";
+  text-transform: uppercase;
+  border-bottom: 2px dashed;
+}
+.right > input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  outline: none;
+  background-color: transparent;
+  /* border-radius: 20px; */
+}
+.right > button {
+  border: 2px solid #fff;
+  color: #fff;
+  
+}
+.right > button:hover {
+  letter-spacing: 3px;
+  color: var(--primary-color);
+  background-color: #fff;
+  font-weight: 900;
+}
+::placeholder {
+  color: var(--primary-color);
+}
+span{
+  font-size: 14px;
+}

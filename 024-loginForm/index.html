@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <div class="password-container">
+          <input type="password" id="password" name="password" required />
+          <span class="toggle-password" onclick="togglePassword()">👁️</span>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <script>
+      function togglePassword() {
+        const passwordField = document.getElementById("password");
+        const passwordToggle = document.querySelector(".toggle-password");
+        const type = passwordField.type === "password" ? "text" : "password";
+        passwordField.type = type;
+        passwordToggle.textContent = type === "password" ? "👁️" : "👁️";
+      }
+    </script>
+  </body>
+</html>

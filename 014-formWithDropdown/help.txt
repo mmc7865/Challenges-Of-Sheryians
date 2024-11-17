@@ -1,0 +1,83 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body{
+width: 100%;
+height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+<div class="container">
+<h2>Travel Booking Form</h2>
+<form>
+    <div class="form-group">
+        <label for="destination">Destination</label>
+        <select id="destination" name="destination"n>
+            <option value="paris">Paris</option>
+            <option value="newyork">New York</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="sydney">Sydney</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="departure-date">Departure Date</label>
+        <input type="date" id="departure-date" name="departure-date">
+    </div>
+    <div class="form-group">
+        <label for="return-date">Return Date</label>
+        <input type="date" id="return-date" name="return-date">
+    </div>
+    <div class="form-group">
+        <label for="travellers">Number of Travellers</label>
+        <select id="travellers" name="travellers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Book Now">
+    </div>
+</form>
+</div>

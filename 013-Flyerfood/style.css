@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+text-transform: uppercase;
+
+}
+.container{
+    width: 40%;
+    height: 100%;
+    background-color: #1b1e23;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: "SUSE";
+    padding: 2%;
+}
+.logo{
+   width: 80px;
+   height: 80px;
+   border: 4px solid #fff;
+   border-radius: 50%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.logo > i{
+   font-size: 40px;
+   font-weight: 100;
+}
+h1{
+    text-transform: uppercase;
+    width: 40%;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+h3{
+text-transform: uppercase;
+font-weight: 300;
+letter-spacing: 3px;
+font-size: 12px;
+
+}
+
+.imageBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 5px 0px;
+}
+.imageBox > img{
+    width: 32%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.line{
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+}
+span{
+    letter-spacing: 2px;
+}

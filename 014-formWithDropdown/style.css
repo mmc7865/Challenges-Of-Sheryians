@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SUSE";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, #005AA7,#FFFDE4);
+}
+header{
+    width: 100%;
+    height: 70%;
+    /* background-color: yellow; */
+    padding: 30px;
+    /* border-bottom: 1px solid black; */
+    background-color: #fff;
+}
+header > h1{
+    font: 900 150px "SUSE";
+    width: 35%;
+    line-height: 120px;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+}
+header > span{
+    font: 900 150px "SUSE";
+    line-height: 128px;
+}
+header > h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    -webkit-text-stroke: 1px #000;
+    color: transparent;
+}
+header > .design{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    right: -20%;
+    top: -20%;
+    border-radius: 50%;
+    background: linear-gradient(to top, #7F7FD5,#86A8E7,#91EAE4);
+}
+header > .image{
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid black; */
+    background: url(https://images.unsplash.com/photo-1532347922424-c652d9b7208e?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40%;
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    box-shadow: 1px 1px 10px #00000050;
+}
+form{
+    width: 90%;
+    height: 15%;
+    margin: -3.5% auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    /* border: 1px solid #000; */
+    box-shadow: 0 0 10px #00000050;
+    z-index: 100;
+    padding: 0 10px;
+}
+.form-group{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #00000050;
+    padding: 20px;
+}
+.form-group > select, .form-group > input{
+    /* box-shadow: 1px 0 20px #00000050; */
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    outline: none;
+}
+form > button{
+    padding: 10px 20px;
+    border-radius: 13px;
+    background-color: #637fb1;
+    border: none;
+    box-shadow: 0 0 5 #00000050;
+    cursor: pointer;
+    text-transform: uppercase;
+    font: 700 15px "SUSE";
+    color: #FFF;
+    letter-spacing: 2px;
+    transition: .5s all;
+}
+form > button:hover{
+    background-color: #572265;
+    letter-spacing: 3px;
+}
+
+

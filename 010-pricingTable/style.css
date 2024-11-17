@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "SUSE", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+font: 900 4vw arial;
+}
+.duration{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #03c7b7;
+    margin: 3% 0;
+    overflow: hidden;
+}
+.duration > span{
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #03c7b7;
+}
+.duration > span:nth-child(2){
+    background-color: #03c7b7;
+    color: #fff;
+}
+.cards{
+    width: 60vw;
+    height: 60vh;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.box{
+    height: 100%;
+    width: 31.5%;
+    border: 2px solid #03c7b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    transition: all .5s;
+    background-color: #d8e8e7bb;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.box > h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.box > h1{
+    font-size: 60px;
+    color: #03c7b7;
+}
+sup,sub{
+    color: #03c7b7;
+    font-size: 30px;
+}
+.box h3{
+    color: gray;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}

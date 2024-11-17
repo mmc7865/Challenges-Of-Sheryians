@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "SUSE";
+}
+.container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  padding-left: 5%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+button{
+    margin-top: 2%;
+    padding: 10px 20px;
+    border: 2px solid #61b658;
+    color: #61b658;
+    background-color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all .5s;
+}
+button:hover{
+    background-color: #61b658;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.container > img {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  filter: grayscale(1);
+}
+.heading::after{
+    content: '';
+    width: 60%;
+    height: 100%;
+    background-color: #1aff0060;
+    right: -78%;
+    top: 60%;
+    position: absolute;
+    transform: rotate(90deg);
+    z-index: 1;
+
+}
+.heading {
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+  background-color: #61b658;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 5px 25px;
+  z-index: 1;
+}
+.text{
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    border-bottom: 5px solid #61b658;
+}
+.text > h2{
+    text-transform: uppercase;
+    color: #61b658;
+    font-size: 60px;
+    line-height: 60px;
+}
+.text > p{
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+.venue{
+    position: absolute;
+    bottom: 10px;
+}
+.bottomImage{
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.midPera{
+    width: 40%;
+    position: absolute;
+    top: 45%;
+    right: 0;
+
+}
+.midPera > h3{
+    font-size: 25px;
+    color: #61b658;
+    text-transform: capitalize;
+}
+.midPera::before{
+    content: '';
+    background-color: #61b658;
+    width: 85px;
+    height: 31px;
+    position: absolute;
+    right: 0;
+    top: -30%;
+    z-index: 20;
+
+}
+.midPera::after{
+    content: '';
+    background-color: #61b658;
+    width: 89px;
+    height: 31px;
+    position: absolute;
+    left: 0;
+    bottom: -35%;
+    z-index: 20;
+
+}
+.midPera > .box{
+    position: absolute;
+    width: 35%;
+    height: 200%;
+    top: 115%;
+    background-color: #1aff0060;
+    z-index: 1;
+
+}

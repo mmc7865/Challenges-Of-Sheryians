@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  background-image: radial-gradient(
+    circle,
+    rgb(1, 138, 102) -400%,
+    rgba(0, 0, 0, 0.345) 100%
+  );
+  padding: 30px;
+}
+.login {
+  /* width: 50%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  font-size: 25px;
+  /* border: 2px solid salmon; */
+}
+.login > h2 {
+  text-transform: capitalize;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+form > input {
+  padding: 15px;
+  display: inline-block;
+  width: 200%;
+  border: none;
+  outline: none;
+  color: #000;
+  border-radius: 20px;
+}
+::placeholder {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+a {
+  text-transform: capitalize;
+  color: gray;
+  font-size: 16px;
+}
+button {
+  display: inline-block;
+  width: 200%;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.google:hover {
+  color: tomato;
+}
+.github:hover {
+  color: grey;
+}
+.facebook:hover {
+  color: blue;
+}
+.newsLetter {
+  width: 40%;
+  height: 100%;
+  background-color: #12513c;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+}
+.newsLetter::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: transparent;
+  box-shadow: 14px 0px #000;
+  border-top-right-radius: 50%;
+  right: 100px;
+}
+.newsLetter::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: transparent;
+  box-shadow: 14px 0px #000;
+  border-top-right-radius: 50%;
+  right: 0px;
+  top: 100px;
+}
+.newsLetter > .utility {
+  width: 120px;
+  height: 120px;
+  background-color: #000;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  border-radius: 15px;
+}
